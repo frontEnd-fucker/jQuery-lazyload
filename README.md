@@ -41,3 +41,13 @@ In this case, there is a 30px threshold, so the images will load when the fold i
       &lt;/script&gt;
     </code>
   </pre>
+
+### Hide placeholder images if JavaScript is off
+
+  <pre>
+    &lt;noscript&gt;
+      &lt;style&gt;
+        img.lazy { display: none }
+      &lt;/style&gt;
+    &lt;/noscript&gt;
+  </pre>

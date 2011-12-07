@@ -1,7 +1,7 @@
 <html>
   <head>
     <style type="text/css">
-      img{height:660px;width:990px;}
+      img{height: 660px; width: 990px;}
     </style>
   </head>
   <body>
@@ -28,8 +28,14 @@
 
     <script type="text/javascript">
       $(function(){
-        $('img').lazyload({threshold: 100});
+        $('img[original-src]').lazyload({threshold: 100});
       });
     </script>
+
+    <noscript>
+      <style>
+        img[original-src]{display: none;}
+      </style>
+    </noscript>
   </body>
 </html>
